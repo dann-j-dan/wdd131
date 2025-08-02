@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda – The Pearl of Africa</title>
+    <meta name="description" content="Discover Uganda: culture, weather, and beauty. WDD 131 assignment by Lubangakene Daniel.">
+    <meta name="author" content="Lubangakene Daniel">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Uganda</h1>
+        <p class="subtitle">The Pearl of Africa</p>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="visually-hidden">Uganda Landscape</h2>
+            <picture>
+                <source srcset="images/Landscape.jpg" media="(min-width: 600px)">
+                <img src="images/Landscape.jpg" alt="Beautiful Uganda landscape">
+            </picture>
+        </section>
+        <section class="info">
+            <h2>About Uganda</h2>
+            <p>Uganda is known for its stunning landscapes, diverse wildlife, and vibrant culture. From the source of the Nile to
+                 the Rwenzori Mountains, Uganda is a land of adventure and beauty. Located in East Africa, Uganda is often referred to as the “Pearl of Africa” due to its rich natural heritage and breathtaking scenery. The country is home to a wide range of ecosystems from lush rainforests and vast savannas to snow-capped mountains and freshwater lakes, including a significant portion of Lake Victoria, Africa’s largest lake.
+Uganda boasts an incredible array of wildlife, including the iconic African Big Five and rare species such as mountain gorillas, which can be tracked in Bwindi Impenetrable National Park. The country is also a birdwatcher’s paradise, with over 1,000 bird species recorded.
+Culturally, Uganda is a mosaic of ethnic groups, each with its own unique traditions, music, dance, and cuisine. The warmth and hospitality of the Ugandan people make visitors feel welcome and immersed in local life.
+Whether you're seeking thrilling safaris, cultural encounters, or peaceful escapes into nature, Uganda offers unforgettable experiences for every traveler.
+</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-details">
+                <img src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon.svg" alt="Weather icon" class="weather-svg">
+                <span class="weather-icon"></span>
+                <p>Temperature: <span id="temp">24</span>°C</p>
+                <p>Wind Speed: <span id="speed">10</span> km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            <span title="Flower" style="font-size: 1.5em;">&#127800;</span>
+            <span class="footer-name">Lubangakene Daniel</span>
+            <span title="Flower" style="font-size: 1.5em;">&#127800;</span>
+            <span class="footer-location">Kampala City, Uganda</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
