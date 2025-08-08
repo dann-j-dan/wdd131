@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filtered Temples</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS (mobile first) -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Open menu">☰</button>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#" data-filter="all" id="home">Home</a>
+      <a href="#" data-filter="old" id="old">Old</a>
+      <a href="#" data-filter="new" id="new">New</a>
+      <a href="#" data-filter="large" id="large">Large</a>
+      <a href="#" data-filter="small" id="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="visually-hidden">Temple grid</h2>
+    <section id="templeContainer" class="gallery" aria-live="polite">
+      <!-- JS will inject temple cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> 😍 Lubangakene Daniel 😍 Uganda</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- Script at end with defer-like behavior (script runs after markup since it's last) -->
+  <script src="scripts/filtered-temples.js"></script>
+</body>
+</html>
